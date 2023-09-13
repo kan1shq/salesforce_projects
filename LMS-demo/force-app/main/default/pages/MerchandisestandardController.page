@@ -1,0 +1,30 @@
+<apex:page Controller="insert_cc_class">
+  <apex:form >
+    <apex:pageBlock title="Employee Form">
+      <apex:pageBlockButtons >
+         <apex:commandButton value="SAVE" action="{!insertRecord}"/>
+         <apex:commandButton value="CANCEL" action="{!cancel}"/>
+      </apex:pageBlockButtons>
+      <apex:pageBlockSection title="Employee Information" collapsible="false">
+          <apex:pageBlockSectionItem >
+             <apex:outputLabel value="Employee Name"/>
+             <apex:inputText value="{!ename}"/>
+          </apex:pageBlockSEctionItem><br/>
+          <apex:pageBlockSectionItem >
+             <apex:outputLabel value="Employee Salary"/>
+             <apex:inputText value="{!esalary}"/>
+          </apex:pageBlockSEctionItem><br/>
+          <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Employee Deptno"/>
+            <apex:inputText value="{!deptno}"/>
+          </apex:pageBlockSectionItem><br/>
+          <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Employee Designation"/>
+            <apex:inputText value="{!job}"/>
+          </apex:pageBlockSectionItem><br/>
+      </apex:pageBlockSection>
+    
+    </apex:pageBlock>
+  
+  </apex:form>
+</apex:page>

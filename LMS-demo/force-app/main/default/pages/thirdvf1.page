@@ -1,0 +1,15 @@
+<apex:page tabstyle="Account">
+  <apex:sectionHeader title="Employees" subtitle="Hero FinCorp" description="Hero FinCorp Employee Portal" help="http://www.herofincorp.com">
+      <apex:form >
+          <apex:pageblock title="Employees List">
+              <apex:pageblockbuttons location="both">
+                  <apex:commandButton value="SAVE" style="color:#FFFFFF;background:#000000"/>
+                  <apex:commandButton value="CANCEL" style="color:#FFFFFF;background:#000000"/>
+              </apex:pageblockbuttons>
+      Kanishk<br/>
+      Gurnoor<br/>
+      Kshitij
+         </apex:pageblock>
+      </apex:form>
+  </apex:sectionHeader>
+</apex:page>

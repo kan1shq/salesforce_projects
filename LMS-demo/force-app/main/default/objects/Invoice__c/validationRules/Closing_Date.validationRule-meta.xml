@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closing_Date</fullName>
+    <active>true</active>
+    <description>If the invoice status is CLOSED, validate that a closing date has been given</description>
+    <errorConditionFormula>AND(
+ ISPICKVAL(Invoice_Status__c, &quot;Closed&quot;),
+ISBLANK( Invoice_Closed_Date__c ))</errorConditionFormula>
+    <errorDisplayField>Invoice_Closed_Date__c</errorDisplayField>
+    <errorMessage>If the Invoice is &quot;Closed&quot;, please add a date.</errorMessage>
+</ValidationRule>

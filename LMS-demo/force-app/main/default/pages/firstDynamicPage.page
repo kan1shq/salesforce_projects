@@ -1,0 +1,6 @@
+<apex:page >
+  The sum of 10 and 5 is {!10+5} <br/>
+  The difference of 10 and 5 is {!10-5} <br/>
+  The product of 10 and 5 is {!10 * 5} <br/>
+  The division of 10 by 5 is {!10 / 5} <br/>
+</apex:page>
