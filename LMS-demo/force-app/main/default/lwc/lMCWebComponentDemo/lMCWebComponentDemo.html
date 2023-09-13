@@ -1,13 +1,13 @@
 <template>
-    <lightning-card title="LMC Web Component" icon-name="custom:custom14">
+    <lightning-card title="Lightning Web Component" icon-name="custom:custom14">
 
-        <div class="slds-m-around_medium">
+        <div class="slds-var-m-around_medium">
             <p>MessageChannel: MyMessageChannel__c</p>
         </div>
 
         <!-- Default/basic -->
-        <div class="slds-p-around_medium lgc-bg">
-            <lightning-input type="text" label="Enter some text" value={myMessage} onchange={handleChange}></lightning-input>
+        <div class="slds-var-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter some text" value={myMessage} onchange={handleChange}></lightning-input><br/>
             <lightning-button label="Publish" onclick={publishMC}></lightning-button>
         </div>
 

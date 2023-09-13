@@ -32,6 +32,7 @@ export default class LMCWebComponentSub extends LightningElement {
         // this.receivedMessage = message;
         if(message.messageToSend){
             this.receivedMessage = message.messageToSend;
+            console.log('System Source: ', message.sourceSystem);
         }
     }
 
