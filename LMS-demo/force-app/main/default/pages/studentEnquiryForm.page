@@ -1,0 +1,61 @@
+<apex:page >
+  <apex:form >
+    <apex:pageBlock title="Student Form">
+      <apex:pageBlockButtons >
+         <apex:commandButton value="SAVE"/>
+         <apex:commandButton value="CANCEL"/>
+      </apex:pageBlockButtons>
+      <apex:pageBlockSection title="Student Information" collapsible="true">
+          <apex:pageBlockSectionItem >
+             <apex:outputLabel value="Student Id"/>
+             <apex:inputText />
+          </apex:pageBlockSEctionItem><br/>
+          <apex:pageBlockSectionItem >
+             <apex:outputLabel value="Student Name"/>
+             <apex:inputText />
+             
+          </apex:pageBlockSectionItem><br/>
+          <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Gender"/>
+            <apex:selectRadio >
+              <apex:selectOption itemLabel="Male" itemValue="M"/>
+              <apex:selectOption itemLabel="Female" itemValue="F"/>
+            </apex:selectRadio>
+          </apex:pageBlockSectionItem><br/>
+          <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Qualification"/>
+            <apex:selectList size="1">
+               <apex:selectOption itemLabel="UnderGraduate" itemValue="UG"/>
+               <apex:selectOption itemLabel="Graduate" itemValue="G"/>
+               <apex:selectOption itemLabel="Post Graduate" itemValue="PG"/>
+               <apex:selectOption itemLabel="Doctorate" itemValue="Ph.d"/>
+            </apex:selectList>
+          </apex:pageBlockSectionItem><br/>
+          <apex:pageBlockSectionItem >
+            <apex:outputLabel value="User Name"/>
+            <apex:inputText />
+          </apex:pageBlockSectionItem><br/>
+          <apex:pageBlockSectionItem >
+            <apex:outputLabel value="PassWord"/>
+            <apex:inputSecret />
+          </apex:pageBlockSectionItem><br/>
+          <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Hobbies"/>
+            <apex:selectCheckBoxes >
+              <apex:selectOption itemLabel="Cooking" itemValue="c"/>
+              <apex:selectOption itemLabel="Travelling" itemValue="T"/>
+              <apex:selectOption itemLabel="Music" itemValue="M"/>
+              <apex:selectOption itemLabel="WebSeries" itemValue="WS"/>
+              
+            </apex:selectCheckBoxes>
+          </apex:pageBlockSectionItem><br/>
+          <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Address"/>
+            <apex:inputTextarea cols="50" rows="5"/>
+          </apex:pageBlockSectionItem>
+      </apex:pageBlockSection>
+    
+    </apex:pageBlock>
+  
+  </apex:form>
+</apex:page>

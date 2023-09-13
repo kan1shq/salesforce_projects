@@ -1,0 +1,24 @@
+<apex:page >
+ <apex:sectionHeader title="Students" subtitle="Apple Soft" description="we are apple soft students" help="http://www.amazon.com"/>
+  <apex:form >
+      <apex:pageBlock title="Apple Soft Students">
+          <apex:pageBlockButtons location="both" >
+             <apex:commandButton value="SAVE" style="color:white;background:black"/>
+             <apex:commandButton value="CANCEL" style="color:white;background:black"/>
+          </apex:pageBlockButtons>
+          Rajesh<br/>
+          Ramesh<br/>
+          Mahesh<br/>
+          Sarvesh<br/>
+          Lokesh<br/>
+          Rakesh<br/>
+          vishwesh<br/>
+          
+          <apex:commandLink value="click on me" style="color:red" 
+title="if you click it take you to Byjus site" action="https://www.byjus.com"/>
+      
+      </apex:pageBlock>
+  
+  
+  </apex:form>
+</apex:page>

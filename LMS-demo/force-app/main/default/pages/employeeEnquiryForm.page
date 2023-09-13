@@ -1,0 +1,32 @@
+<apex:page showHeader="false" Controller="insert_cc_class">
+  <apex:form >
+  
+          <apex:image url="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/2560px-Salesforce.com_logo.svg.png" height="100px"/>
+    <apex:pageBlock title="Employee Form">
+      <apex:pageBlockButtons >
+         <apex:commandButton value="{!$Label.test_label}" action="{!insertRecord}"/>
+         <apex:commandButton value="CANCEL" action="{!cancel}"/>
+      </apex:pageBlockButtons>
+      <apex:pageBlockSection title="Employee Information" collapsible="false"><br/>
+          <apex:pageBlockSectionItem >
+             <apex:outputLabel value="Employee Name"/>
+             <apex:inputText value="{!ename}"/>
+          </apex:pageBlockSEctionItem><br/>
+          <apex:pageBlockSectionItem >
+             <apex:outputLabel value="Employee Salary"/>
+             <apex:inputText value="{!esalary}"/>
+          </apex:pageBlockSEctionItem><br/>
+          <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Employee Deptno"/>
+            <apex:inputText value="{!deptno}"/>
+          </apex:pageBlockSectionItem><br/>
+          <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Employee Designation"/>
+            <apex:inputText value="{!job}"/>
+          </apex:pageBlockSectionItem><br/>
+      </apex:pageBlockSection>
+    
+    </apex:pageBlock>
+  
+  </apex:form>
+</apex:page>
